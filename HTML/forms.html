@@ -1,0 +1,68 @@
+<!--  form for collecting data , create sign up , any inout name , 
+    email ,  -->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>HTML</title>
+</head>
+
+<body>
+  <h1>html(forms)</h1>
+  <h3>forms</h3>
+  <h4>html signup form</h4>
+  <form action="https://www.myBE">
+    <!--  <input/>  selfendingelement -->
+    <span>user name : </span><input type="text" placeholder="enter your name" /> <br />
+    <br />
+    <input type="email" placeholder="enter your  email" />
+    <!-- placeholder box k andr grey krdega text-->
+    <br />
+    <br />
+    <input type="password" placeholder="enter your password" />
+    <br />
+    <br />
+    <input type="date" />
+    <br />
+    <br />
+    <input type="range" />
+    <br />
+    <br />
+    <label for="gender">enter gender : </label>
+    <!-- <input type="checkbox" name="gender"> male  -->
+    <input type="radio" name="gender" /> male
+    <input type="radio" name="gender" /> female
+    <input type="radio" name="gender" /> other
+
+    <br />
+    <br />
+    <label for="state">state</label>
+    <select name="state" id="">
+      <option value="punjab">punjab</option>
+      <option value="mumbai">mumbai</option>
+      <br />
+      <br />
+    </select>
+    <br /><br />
+    choose your file <input type="file" /> <br />
+    <br />
+    <input type="color" />
+    <br /><br />
+
+    <input type="submit" value="signup" /> <br />
+    <br />
+
+    <button onclick="alert('button clicked')">click me</button>
+    <br /><br />
+
+    <label for="picture"> choose <picture>:</picture></label>
+    <input type="file" name="avatar" id="avtar" accept="doc/img" />
+
+    <h3>html5 multimedia</h3>
+    <!-- adding video audio ...etc -->
+    <video src="./assets/videos/pexels_videos_4409 (1080p).mp4" controls width="400px"></video>
+  </form>
+ </body>
+
+</html>
