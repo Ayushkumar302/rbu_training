@@ -22,7 +22,7 @@ h1{
  color:rgb(37, 4, 255);
 }
 
-/* d.) Attribute Slector */
+/* d.) Attribute  Slector */
 /* elementName[attributeName condition] */
 /* I want to find the <a> whose href starts with https:// */
 /* ^ -> Starts with
