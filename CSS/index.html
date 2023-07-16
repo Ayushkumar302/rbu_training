@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html> 
+    <!-- Meta Data of the Document -->
+    <head>
+   
+        <!--  <style>
+        h1
+        {
+           color: blue; 
+        }
+        p
+        {
+            color: gray;
+        } </style> -->
+
+        <!-- External CSS (Use style.css) -->
+        <link rel="stylesheet" href="style.css">
+        <title>CSS</title>
+        
+    </head>
+    <body>
+        <!-- PLAIN TEXT :- This is a sample text. This is a change. Another change
+        This is a new line plain text. -->
+        <!-- HTML5 Block Level Elements -> All the HTML elemensts have some default styles. -->
+        <!-- Heading Elements (h1 - h6) -> textSize(h1) > textSize(h6) -->
+        <!-- <h1 style="cssProperty: cssValue;">Introduction to HTML</h1> -->
+        <!-- 1. Inline CSS (use style as an attribute) -->
+        <h1>Introduction to CSS</h1>
+        <h2 id="heading-one">Heading - 2</h2>
+        <!-- <h3>Heading - 3</h3>
+        <h4>Heading - 4</h4>
+        <h5>Heading - 5</h5>
+        <h6>Heading - 6</h6> --> 
+        <h3 id="heading-two">heading</h3>
+
+        <!-- Paragraphs -->
+        <p class="mypara">HTML (Hypertext Markup Language) is a text-based approach to describing how content contained within an HTML file is structured. This markup tells a web browser how to display text, images and other forms of multimedia on a webpage.</p>
+
+        <p class="mypara">HTML (Hypertext Markup Language) is a text-based approach to describing how content contained within an HTML file is structured. This markup tells a web browser how to display text, images and other forms of multimedia on a webpage.</p>
+
+        <p>HTML (Hypertext Markup Language) is a text-based approach to describing how content contained within an HTML file is structured. This markup tells a web browser how to display text, images and other forms of multimedia on a webpage.</p>
+
+        <p class="mypara">HTML (Hypertext Markup Language) is a text-based approach to describing how content contained within an HTML file is structured. This markup tells a web browser how to display text, images and other forms of multimedia on a webpage.</p>
+
+
+    <h3>Lists - </h3>
+    <!-- Ordered List (ol) -->
+    <ol  type="i">
+        <li class="ordered-list-item">Item - 1</li>
+        <li class="ordered-list-item">Item - 2</li>
+        <li class="ordered-list-item">Item - 3</li>
+        <li class="ordered-list-item">Item - 4</li>
+        <li class="ordered-list-item">Item - 5</li>
+    </ol> 
+    <!-- Unordered List (ul) -->
+    <ul>
+        <li class="ordered-list-item">Item - 1</li>
+        <li class="ordered-list-item">Item - 2</li>
+        <li class="ordered-list-item">Item - 3</li>
+        <li class="ordered-list-item">Item - 4</li>
+        <li class="ordered-list-item">Item - 5</li>
+    </ul>
+
+    <hr />
+
+    <h3>Anchors - </h3>
+    <!-- Link :-
+        1. Absolute Link
+        2. Relative Link (./ & ../)
+        3. Root Relative Link
+     -->
+    <!-- There exists elemets which donot require extra space for rendering, such elements are called INLINE ELEMENTS -->
+    <p>click <a href="https://www.google.com/" target="_blank">here</a> to go to Google.</p>
+    <p>click <a href="./assets/gfx100s_sample_04_thum-1.jpg">here</a> to see the image.</p>
+    <p>click <a href="./second.html">here</a> to visit to Page 2</p>
+
+
+
+ <div id="container">
+
+
+
+
+
+ </div>
+
+<div id="containertwo"></div>
+
+
+    <hr />
+
+    <!-- Self Ending Elements -->
+    <h3>Images - </h3>
+    <img src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg" alt="Image One"  width="400px"/>
+    <hr />
+    <img src="./assets/images/pexels-tina-nord-792416 (1).jpg" alt="Image - 2" width="400px" />
+
+    <hr>
+
+    <h3>Tables - </h3>
+     <table border="1">
+        <tr>
+            <!-- <td><b>Emp_id</b></td> -->
+            <th>Emp_ID</th>
+            <th>Emp_Name</th>
+            <th>Emp Email</th>
+            <th>Emp Designation</th>
+        </tr>
+        <tr>
+            <!-- <td><b>Emp_id</b></td> -->
+            <td>00123456</td>
+            <td>Employee-1</td>
+            <td>employeeOne@email.com</td>
+            <td>SDE-1</td>
+        </tr>
+        <tr>
+            <td>00123456</td>
+            <td>Employee-2</td>
+            <td>employeeTwo@email.com</td>
+            <td>SDE-2</td>
+        </tr>
+        <tr>
+            <td>004533456</td>
+            <td>Employee-3</td>
+            <td>employeeThree@email.com</td>
+            <td>SDE-Intern</td>
+        </tr>
+     </table>
+
+     <hr />
+
+     <h3>HTML Signup Forms - </h3>
+     <form action="https://www.myBE.php/">
+        <!-- <span>Your Name : </span><input type=""  /> -->
+        <div>
+            <label>Email :</label>
+            <input type="text" placeholder="enter your name..." /> 
+        </div>
+        <!-- Email :- username@hostname.com -->
+        <div>
+            <input type="email" placeholder="enter your email..." />
+        </div>
+         <div>
+            <input type="password" placeholder="enter your password..." /> 
+         </div>
+        <div>
+            <input type="date" /> 
+        </div>
+        <div>
+            <input type="range" />
+        </div> 
+        <label>Enter you gender - </label> 
+        <!-- <input type="checkbox" /> Male <br />
+        <input type="checkbox" /> Female <br />
+        <input type="checkbox" /> Others <br /> -->
+        <div>
+            <select>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Others</option>
+            </select> 
+        </div>
+        <div>
+            <label>Upload you CV - </label>
+            <input type="file" /> 
+        </div>
+        <div>
+            <input type="color" /> 
+        </div>
+        <div>
+            <button onclick="console.log('Btn was clicked!')">Click Me!</button>
+        </div>
+        <div>
+            <input type="submit" value="Sign Up" />
+        </div>
+     </form>
+
+
+     <hr/>
+
+     <h3>HTML5 Multimedia :- </h3>
+     <h5>1. Video - </h5>
+     <video src="./assets/videos/MyVideo.mp4" controls ></video>
+
+     <hr />
+
+     <h3>HTML5 Audio :- </h3>
+     <audio src="./assets/audio/myAudio copy.mp3" controls></audio>
+
+     <hr />
+
+     <h3>Google Maps :- </h3>
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109688.6897230075!2d76.47926161640623!3d30.780990500000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ffa9485c539a5%3A0x7e32a159650281bc!2sRayat-Bahra%20University!5e0!3m2!1sen!2sin!4v1689396845380!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+     <hr />
+     <h3>YouTube Videos :- </h3>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/5oH9Nr3bKfw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+     <h3>HTML5 Semantics :- </h3>
+     <div id="page">
+        <div id="header"></div>
+        <div id="left-aside"></div>
+        <div id="main">
+            <div id="article-1"></div>
+            <div id="article-2"></div>
+            <div id="article-3"></div>
+            <div id="article-4"></div>
+        </div>
+        <div id="footer"></div>
+     </div>
+
+     <div id="page">
+        <header id="">
+            <nav></nav>
+        </header>
+        <aside></aside>
+        <main>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+        </main>
+        <footer></footer>
+     </div>
+
+    <div style="height: 250px;"></div>
+</body>
+</html>
