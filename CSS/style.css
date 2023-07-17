@@ -47,7 +47,7 @@ a[href$=".jpg"]
 
 img[src^="https://"] {
   border: 50px solid rgb(210, 24, 24);
-width: 400px;
+width: 50%;
 }
 /* img[src$=".jpg"] {
   border: 50px solid gray;
@@ -98,7 +98,7 @@ li:first-child {
   background: linear-gradient(   red, yellow,green) ;
 }
 
-
+ /* linear gradient */
 /* #container 
 {
  
@@ -116,3 +116,37 @@ li:first-child {
 
 }
 
+
+/* UNITS OF MEASUREMENTS -
+catagories - 
+
+1.) absolute unit (px - pixel) 
+2.) realtive unit  (em) use for responsive event
+
+
+*/
+#heading-one
+{
+
+  font-size: 60px;
+}
+
+#heading-three{
+font-size: 2em;
+/*  em means twice the size of deafault size 
+que - diff bw em and rem */
+
+}
+
+/* img{
+width: 500px;
+height: 300px;
+
+} */
+
+img{
+  height:720px;   /*  it should be  absolute*/
+   width: 50% ;   /*  it should be  relative*/
+}
+
+/* colors _ 1.hex code , 2.name 3. rgb */
