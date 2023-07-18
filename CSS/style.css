@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Oswald:wght@300&display=swap');
+body{
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.9em;
+  /* text-align: center; FOR aligntext */
+
+}   /* FOR FONTS */ 
+
+
 /* 1.selectors */
 /* selector { cssProperty: cssValue; } */
 /* a.) Element Selector - Selects element based on the name */
+
 h1{
     color: rgb(255, 102, 0);
   
@@ -149,4 +159,82 @@ img{
    width: 50% ;   /*  it should be  relative*/
 }
 
-/* colors _ 1.hex code , 2.name 3. rgb */
+/* BOX MODEL */
+#form-email , #form-name,#form-password
+{
+  width: 90%;
+} 
+
+
+.form-item {
+  margin: 8px;
+}
+
+form
+{
+
+ /* border: widthOfBorder style color; */
+    /* style :- 1. solid, 2. dotted, 3. dashed, 4. double */
+    border: 3px solid gray;
+    
+    /* 
+    padding: a-px;
+    padding: a-px b-px; a -> top-bottom | b -> left-right
+    padding: a-px b-px c-px d-px; a -> top | b -> right | c -> bottom | d -> left 
+    */
+    padding: 10px;
+    padding: 10px 5px;
+    padding-top: 5px; padding-right: 10px; padding-bottom: 15px; padding-left: 20px;
+    padding: 5px 10px 15px 20px;  /* clock wise direction */
+
+    margin: 10px;
+    margin: 10px 5px;
+    margin: 5px 10px 15px 20px;
+
+    /* NOTE:- padding & margin are both parent properties -> they also have sub-properties associated w them. */
+    /* padding-left:; padding-right:; padding-top:; padding-bottom:; margin-top:; margin-bottom:; margin-left:; margin-right:; */
+}
+
+/* background: */
+#container-two {
+  width: 65%;
+  height: 500px;
+  /* NOTE:- background is a parent property */
+  /* background: red; */
+  background: url('https://fujifilm-x.com/wp-content/uploads/2021/01/gfx100s_sample_04_thum-1.jpg');
+  background-repeat: no-repeat;
+  background-color: cyan;
+  /* background-size: 100%; background-size: auto; background-size: cover; */
+  background-size: cover;
+}
+
+/* Gradients - 1. Linear Gradient, 2. Radial Gradients */
+#container-three {
+  width: 65%;
+  height: 400px;
+
+  /* NOTE :- If no direction is provided, default is top to bottom | Directions :- bottom, top, left, right */
+  /* background: linear-gradient(direction, black, red, blue, green, yellow, white); */
+  /* background: linear-gradient(to left, black, red, blue, green, yellow, white); */
+
+  /* NOTE :- You can specify the directions usinh deg values (0deg) starts from bottom, reaches to top */
+  background: linear-gradient(360deg, red,yellow,green,blue)
+
+  /* 
+  COLORS :-
+  1. Named Colors     2. HEX Code     3. RBG() -> rgb(red, green, blue)   4. RGBA() -> rgb(red, green, blue, absolute) -> absolute [0-1]; 
+  */
+}
+
+/* body{     used rgba ,  range -  0 to 1 
+  background: linear-gradient(to bottom , rgba(75, 237, 237, 1) , rgba(75, 237, 237, 0.4));
+} */
+
+
+#container-four {
+  width: 400px;
+  height: 400px;
+
+  background: radial-gradient(circle, black 10%, red 20%, blue 25%, green 30%, yellow 80%, white 90%);
+}
+/* Fonts and Font-Family   (imported at the top and specified too) */
