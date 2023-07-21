@@ -1,11 +1,278 @@
+<!--  -->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOOTSTRAP</title>
     <link rel="stylesheet" href="./bootstrap-3.4.1-dist/bootstrap-3.4.1-dist/css/bootstrap.min.css">
 </head>
+
 <body>
-    <h1>WELCOME TO BOOTSTRAP</h1>
+    <!-- 1. dwonload bootstrap -->
+    <!-- 2. install bootstrap using npm  by writing command in terminal -  npm install bootstrap@3  -->
+    <!-- 3.  Using Bootstrap CDN (content divelry network)  -->
+    <!-- <h1>WELCOME TO BOOTSTRAP !</h1> -->
+
+    <div class="container-fluid">
+        <!-- this container-fluid generally used for headings -->
+        <h1 class="page-header">WELCOME TO BOOTSTRAP !</h1>
+        <!-- page-header class use for line -->
+    </div>
+    <div class="container">
+        <p class="lead"> What is Bootstrap? Bootstrap is a free, open source front-end development framework for the
+            creation of
+            websites and web apps. Designed to enable responsive development of mobile-first websites, Bootstrap
+            provides a collection of syntax for template designs.</p>
+        <!-- class lead use as bold  -->
+
+        <p> What is Bootstrap? Bootstrap is a free, open source front-end development framework for the creation of
+            websites and web apps. Designed to enable responsive development of mobile-first websites, Bootstrap
+            provides a collection of syntax for template designs.</p>
+
+        <p> What is Bootstrap? Bootstrap is a free, open source front-end development framework for the creation of
+            websites and web apps. Designed to enable responsive development of mobile-first websites, Bootstrap
+            provides a collection of syntax for template designs.</p>
+
+        <h3>alignments and texts - </h3>
+        <p class="text-left">left align</p>
+        <p class="text-center">center align</p>
+        <p class="text-right"> right alighn</p>
+
+         <!-- bootstrap contextual class -->
+
+        <h3>contextual classes - </h3>
+
+        <!-- for colors
+        1. primary - blue
+        2.success - green ,
+        3. danger - red
+        4.   muted - grey
+        5.  info - light blue
+        6. waring - yellow , orangish
+
+    -->
+
+        <p class="text-primary , bg-warning">contextual class - primary</p>
+        <p class="text-success">contextual class -success</p>
+        <p class="text-danger">contextual class - danger</p>
+        <p class="text-muted">contextual class - muted(not possible)</p>
+        <p class="text-info">contextual class - info</p>
+        <p class="text-warning">contextual class - warning</p>
+
+        <hr />
+
+        <p class="bg-primary">contextual class - primary</p>
+        <p style="color: green ;" class="bg-success">contextual class - success</p>
+        <!-- to creat new class we can add class name in it class="bg-success-myclass , if we create a new separate class it will override cs.min code-->
+        <p class="bg-danger">contextual class -danger </p>
+        <p class="bg-muted">contextual class - muted</p>
+        <p class="bg-info">contextual class - info</p>
+        <p class="bg-warning">contextual class - warning </p>
+
+        <hr>
+
+        <!-- bootstrap  buttons/subbimt & anchors -->
+        <h3>buttons/subbimt & anchors - </h3>
+
+        <button class="btn btn-success">button</button>
+        <input class="btn btn-primary" type="submit" value="submit">
+        <a class="btn btn-danger" href="">anchors</a>
+        <h4>buton size - </h4>
+        <button class="btn btn-success btn-sm">button</button>
+        <button class="btn btn-success btn-lg">button</button>
+        <button class="btn btn-success btn-xs">button</button>
+
+    </div>
+
+    <hr>
+    <!--bootstrape table -->
+    <div class="container">
+        <h3>tables</h3>
+        <table class="table table-bordered table-condensed table-hover">
+            <tr>
+                <th>employ id</th>
+                <th>employ name</th>
+                <th>employ designation</th>
+                <th>salary</th>
+            </tr>
+            <tr>
+                <td>4525</td>
+                <td>ayush</td>
+                <td>rhfufb@gamail.com</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>4525</td>
+                <td>ayush</td>
+                <td>rhfufb@gamail.com</td>
+                <td>5000</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+    <!--  bootstrap forms -->
+    <div class="container-fluid">
+        <h1> forms - </h1>
+    </div>
+
+    <div class="container">
+
+        <form class="">
+
+            <div class="form-group">
+                <!-- form group class  -->
+                <label>Email :</label>
+                <input class="form-control" type="text" placeholder="enter your name..." />
+            </div>
+
+            <div class="form-group">
+                <input class="form-control" type="email" placeholder="enter your email..." />
+            </div>
+
+            <div class="form-group">
+                <input class="form-control" type="password" placeholder="enter your password..." />
+            </div>
+
+            <div class="form-group">
+                <label>date of birth</label>
+                <input class="form-control" type="date" />
+            </div>
+
+            <div class="form-group">
+                <label"> how well do you feel ?</label>
+                    <input class="form-control" type="range" />
+            </div>
+
+            <div class="form-group">
+                <label>Enter you gender - </label>
+            </div>
+
+            <div class="form-group">
+                <select class="form-control">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Others</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Upload you CV - </label>
+                <input class="form-control" type="file" />
+            </div>
+
+            <div class="form-group">
+                <input type="color" />
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-success" onclick="console.log('Btn was clicked!')">Click Me!</button>
+            </div>
+
+            <div class="form-group">
+                <input class="btn btn-primary" type="submit" value="Sign Up" />
+            </div>
+        </form>
+    </div>
+
+    <hr>
+
+    <!-- bootstrap navigation bar -->
+    <div class="container-fluid">
+        <h1> navigation bar - </h1>
+    </div>
+    <div class="container">
+
+        <ol class="list-unstyled">
+            <li>Item - 1</li>
+            <li>Item - 2</li>
+            <li>Item - 3</li>
+            <li>Item - 4</li>
+            <li>Item - 5</li>
+        </ol>
+
+        <ul class="list-unstyled list-inline">
+            <li><a href="">home</a></li>
+            <li><a href="">project</a></li>
+            <li><a href="">servics</a></li>
+            <li><a href="">about us</a></li>
+            <li><a href="">contact us</a></li>
+        </ul>
+
+        <ul style="display: flex; justify-content: space-around;" class="list-unstyled list-inline">
+            <li><a href="">home</a></li>
+            <li><a href="">project</a></li>
+            <li><a href="">services</a></li>
+            <li><a href="">about us</a></li>
+            <li><a href="">contact us</a></li>
+        </ul>
+
+    </div>
+
+    <!-- bootstrap 3 - pannels and bootstrap 4 - cards  -->
+    <div class="container-fluid">
+        <h3> Panels - </h3>
+    </div>
+
+    <div class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h4 style="text-align: center;">Panel Heading</h4>
+            </div>
+
+            <div class="panel-body">
+
+                <p>What is Bootstrap? Bootstrap is a free, open source front-end development framework for the
+                    creation of
+                    websites and web apps. Designed to enable responsive development of mobile-first websites, Bootstrap
+                    provides a collection of syntax for template designs.</p>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <hr>
+
+    <!-- bootstrap grids -->
+
+    <div class="container-fluid">
+        <h3>bootstrap Grids :-</h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading " style="text-align: center;">panel heading</div>
+                    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vero non nesciunt iste sequi minus, ut deserunt porro illum dignissimos ducimus alias harum possimus impedit dolores. Facilis debitis beatae veniam.</p></div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading ">panel heading</div>
+                    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vero non nesciunt iste sequi minus, ut deserunt porro illum dignissimos ducimus alias harum possimus impedit dolores. Facilis debitis beatae veniam.</p></div>
+                </div>
+            </div><div class="col-lg-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading ">panel heading</div>
+                    <div><p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vero non nesciunt iste sequi minus, ut deserunt porro illum dignissimos ducimus alias harum possimus impedit dolores. Facilis debitis beatae veniam.</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    </div>
+
+    <div style="height: 500px;"></div>
 </body>
+
 </html>
