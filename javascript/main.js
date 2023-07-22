@@ -92,18 +92,19 @@ while (i < 5) {
 
 
 // ******NON-PRIMITIVE DATA TYPES(Non-PDTs)********
-// a) ARRAYS
+
+// a) ********ARRAYS********
 // * it is contigous in nature
 //
 // identify as -  []   (square brackets)
 // 3 ways to define arrays
 let numbers = [10, 20, 30, 40, 50]
 let arr = []; // empty array
-let  arrobj = new Array(10) ;
+let arrobj = new Array(10);
 
 console.log(numbers);
 // console.log(typeof numbers);
-console.log(arr); 
+console.log(arr);
 console.log(arrobj);
 
 console.log(numbers);
@@ -114,7 +115,7 @@ numbers.push(60)
 console.log(numbers);
 
 // array spread operator
-let myArr1 = [100,200,300,400,500]
+let myArr1 = [100, 200, 300, 400, 500]
 // let myArr2 = myArr1    // this is not a copy mechanism
 
 //array spread operator
@@ -122,26 +123,79 @@ let myArr2 = [...myArr1]
 
 myArr1.push(-10)
 myArr2.push(1000)
-console.log(myArr1);//[100, 200, 300, 400, 500, -10]
-console.log(myArr2);//[100, 200, 300, 400, 500, 1000]
+console.log(myArr1); //[100, 200, 300, 400, 500, -10]
+console.log(myArr2); //[100, 200, 300, 400, 500, 1000]
 
-//2. pop method
+//2. pop 
 myArr1.pop(-10)
 console.log(myArr1);
 
-// shift - delete Element from starting of array
+// shift - remove  Element from starting of array
 let deleteElement = myArr1.shift(100)
 console.log(myArr1);
 
 //unshift - add Element from starting of array
-letnewlength = myArr1.unshift(50)//5
+letnewlength = myArr1.unshift(50) //5
 console.log(myArr1);
 
-let num1 = [10,20,30,40,50]
-let num2 = [100,200,300,400,500]
-let combinearray = num2.concat(num1)
-console.log(combinearray);
+let num1 = [10, 20, 30, 40, 50]
+let num2 = [100, 200, 300, 400, 500]
+let combinedarray = num2.concat(num1)
+console.log(combinedarray);
 
 
 let dummyArray = [10, "String", true, null, undefined, []]
 console.log(dummyArray)
+
+
+// ****matrices****
+//****2D ARRAYS*****
+let twoDArray = [
+    [10, 20, 30],
+    [40, 50, 60, ],
+    [70, 80, 90]
+]
+console.log(twoDArray);
+console.log(twoDArray[1][1]);
+
+//******* b)JS OBJECTS- (object datatype)
+// defined  by -   { }
+// let myObj = {key: value}
+// console.log(myobj);
+
+let myobj = {
+    name: 'user one', //// string object
+    email: 'userone@service.com',
+    password: 'examplepassword',
+    isemployed: true, // boolean object
+    hobbies: ['music', 'painting', 'readingbooks'], //array object
+    address: {
+        city: 'kharar' ,
+        street: 'street-1' ,
+        state: 'punjab',
+        pincode :[1234,5678]
+    }
+}
+console.log(myobj);
+console.log(`hi,this is user ${myobj.name} , my email is ${myobj.email} , & my password is ${myobj.password}`);
+console.log(myobj.hobbies[0]);
+console.log(myobj.address.city ,'-',  myobj.address.state);
+console.log('pincode - ', myobj.address.pincode[1]);
+
+
+// constructor
+
+let myObj = new Object()
+
+ myObj.name= 'user one',t
+    myObj.email= 'userone@service.com'
+    myObj.password= 'examplepassword'
+    myObj.isemployed= true 
+    myObj.hobbies= ['music', 'painting', 'readingbooks']
+    myObj.address= {
+        city: 'kharar' ,
+        street: 'street-1' ,
+        state: 'punjab',
+        pincode :[1234,5678]
+    }
+console.log(myObj);
