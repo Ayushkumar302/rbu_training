@@ -230,17 +230,36 @@
 //    if (i%2==0) {
 //     items[i].style.backgroundColor='lightblue'
 //    }
-    
+
 // }
 
 //3. siblings - previous sibling , Nextsibling
 //siblings
-console.log(document.getElementById('head').previousElementSibling);
+// console.log(document.getElementById('head').previousElementSibling);
 
 // nextsibling
-console.log(document.getElementById('head').nextElementSibling);
+// console.log(document.getElementById('head').nextElementSibling);
 
 // creating html using js
-const mydiv = document.createElement('div')
-mydiv.textContent='demo'
-mydiv.setAttribute('id','my-div')
+// const myDiv = document.createElement('div')
+// myDiv.textContent = 'Demo Text'
+// myDiv.setAttribute('id', 'my-div')
+// myDiv.setAttribute('class', 'my-div-class')
+
+// // ADding element to the HTML - appendChild()
+// document.getElementById('dummy-div').appendChild(myDiv)
+
+// console.log(myDiv)
+
+
+// Item Lister Application
+document.getElementById('submitBtn').addEventListener('click', (e) => {
+    e.preventDefault()
+    const text = document.getElementById('text-input').value
+    const newLi = document.createElement('li')
+    newLi.textContent = text
+    newLi.setAttribute('class', 'list-group-item')
+    document.getElementById('items').appendChild(newLi)
+})
+
+
