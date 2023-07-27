@@ -8,7 +8,8 @@
 // console.dir(document)
 // console.log(document.URL)
 // console.log(document.all)
-// IDENTIFIER METHODS :-
+// ************IDENTIFIER METHODS :-***********
+
 // 1. getElementById()
 // const myHeader = document.getElementById('header-title')
 // console.log(myHeader)
@@ -16,6 +17,7 @@
 // const myHeading = document.all[4];
 // document.all[4].textContent = "Welcome to DOM"
 // console.log(myHeading)
+
 // // 2. getElementsByClassName
 // const listItems = document.getElementsByClassName('list-group-item')
 // console.log(listItems)
@@ -107,7 +109,7 @@
 //     console.log('submit button clicked');
 // })
 
-// event parameter - meta data of an event
+// event parameter - ****meta data of an event**
 // document.getElementById('submitBtn').addEventListener('click' , (params) =>    //parameter can be of any name
 // {
 //     params.preventDefault()
@@ -190,7 +192,7 @@
 
 
 
-// 
+// for runtime 
 // document.getElementById('text-input').addEventListener('keypress'  , (e)=>
 
 // {
@@ -198,11 +200,47 @@
 //     console.log(e.target.value);
 
 // })
-// alternavtive  -  for if user add any detail to text box and give its value after user finishes entering data
-document.getElementById('submitBtn').addEventListener('click' , (e)=>
-{
-    e.preventDefault()
-    console.log( document.getElementById('text-input').value )
-  
 
-})
+// alternavtive  -  for if user add any detail to text box and give its value after user finishes entering data
+// document.getElementById('submitBtn').addEventListener('click', (e) => {
+//     e.preventDefault()
+//     console.log(document.getElementById('text-input').value)
+
+
+// })
+
+
+// FUN ACTIVITY 
+// document.querySelector('#container-box').addEventListener('mouseenter', (e) => {
+//     console.log(e);
+//     document.querySelector('#container-box').style.backgroundColor = `rgb(0, ${e.offsetX}, ${e.offsetY})`
+// })
+// document.querySelector('#container-box').addEventListener('mouseleave', (e) => {
+//     document.querySelector('#container-box').style.backgroundColor = `rgb(100, ${e.offsetX}, ${e.offsetY})`   
+// })
+
+///*********DOM Relationships / DOM TRAVELSALS *********
+
+//1. parentEelement
+// console.log(document.getElementById('items').parentElement);
+
+//2. childern 
+// const items = document.getElementById('items').children
+// for (let i = 0; i < items.length; i++) {
+//    if (i%2==0) {
+//     items[i].style.backgroundColor='lightblue'
+//    }
+    
+// }
+
+//3. siblings - previous sibling , Nextsibling
+//siblings
+console.log(document.getElementById('head').previousElementSibling);
+
+// nextsibling
+console.log(document.getElementById('head').nextElementSibling);
+
+// creating html using js
+const mydiv = document.createElement('div')
+mydiv.textContent='demo'
+mydiv.setAttribute('id','my-div')
